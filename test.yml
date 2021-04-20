@@ -1,5 +1,4 @@
   
-- hosts: all
 - name: Install IIS Web-Server with sub features and management tools
   ansible.windows.win_feature:
     name: Web-Server
