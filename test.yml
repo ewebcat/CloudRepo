@@ -1,8 +1,11 @@
-  
-- name: Install IIS Web-Server with sub features and management tools
-  ansible.windows.win_feature:
-    name: Web-Server
-    state: present
-    include_sub_features: yes
-    include_management_tools: yes
-  register: win_feature
+---
+- name: Install IIS
+  hosts: windows
+  gather_facts: true
+  tasks:
+   - win_feature:
+       name: "web-server"
+       state: present
+       restart: yes
+       include_sub_features: yes
+       include_management_tools: yes
