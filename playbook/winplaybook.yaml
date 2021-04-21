@@ -1,4 +1,15 @@
-- name: Install IIS (Web-Server only)
-  ansible.windows.win_feature:
-    name: Web-Server
-    state: present
+PowerShell
+- name: test cmd from win_command module
+  hosts: all
+  tasks:
+    - name: run netstat and return Ethernet stats 
+      win_command: netstat -e
+      register: netstat
+    - debug: var=netstat
+- name: test cmd from win_command module
+  hosts: windows
+  tasks:
+    - name: run netstat and return Ethernet stats 
+      win_command: netstat -e
+      register: netstat
+    - debug: var=netstat
