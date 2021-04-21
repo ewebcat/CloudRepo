@@ -4,9 +4,4 @@ all:
     world0: 
       hosts: 
         WIN-6HGD8KKIS03.enterpriseportal.net
-      vars:
-            ansible_user: ansible_admin
-            ansible_connection: winrm
-            ansible_winrm_server_cert_validation: ignore
-            ansible_port: 5985
- 
+      
