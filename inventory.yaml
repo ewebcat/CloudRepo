@@ -3,11 +3,6 @@ all:
   children: 
     world0: 
       hosts: 
-        git.server.com: 
-        gui.server.com: 
-        keras.server.com: 
-        ldap.server.com: 
-        awx.server.com: 
-        radius.server.com: 
+        WIN-6HGD8KKIS03.enterpriseportal.net
       vars:
         ansible_user: root
