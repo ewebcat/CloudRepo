@@ -1,0 +1,13 @@
+all:
+  hosts: 
+  children: 
+    world0: 
+      hosts: 
+        git.server.com: 
+        gui.server.com: 
+        keras.server.com: 
+        ldap.server.com: 
+        awx.server.com: 
+        radius.server.com: 
+      vars:
+        ansible_user: root
