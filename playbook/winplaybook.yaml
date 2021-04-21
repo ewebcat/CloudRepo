@@ -1,4 +1,3 @@
-PowerShell
 - name: test cmd from win_command module
   hosts: all
   tasks:
