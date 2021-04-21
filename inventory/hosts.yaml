@@ -1,1 +1,8 @@
-WIN-6HGD8KKIS03
+all:
+  hosts: 
+  children: 
+    world0: 
+      hosts: 
+        WIN-6HGD8KKIS03.enterpriseportal.net
+      vars:
+        ansible_user: root
